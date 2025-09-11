@@ -5,6 +5,16 @@
 
 ## New features {#features}
 
+### [ZWLR Layer Shell support for Wayland](https://wayland.app/protocols/wlr-layer-shell-unstable-v1)
+
+Create surfaces that are layers of the desktop
+
+Such surfaces are assigned to a "layer" of the output and rendered with
+a defined z-depth respective to each other. They may also be anchored to the
+edges and corners of a screen and specify input handling semantics.
+This interface should be suitable for the implementation of many desktop shell
+components, and a broad number of other applications that interact with the desktop.
+
 ### Unlimited mouse buttons {#unlimited_mouse_buttons}
 
 GLFW now has an input mode which allows an unlimited number of mouse buttons to
@@ -15,7 +25,7 @@ values over 8. For compatibility with older versions, the
 this.
 
 
-### EGLConfig native access function {#eglconfig}
+### EGL config native access function {#eglconfig}
 
 GLFW now provides the @ref glfwGetEGLConfig native access function for querying
 the `EGLConfig` of a window that has a `EGLSurface`.
